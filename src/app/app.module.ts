@@ -4,15 +4,10 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
-  ],
-  declarations: [AppComponent, ProductListComponent],
+  imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot([])],
+  declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
